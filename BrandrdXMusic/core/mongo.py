@@ -6,7 +6,7 @@ import config
 
 from ..logging import LOGGER
 
-TEMP_MONGODB = "mongodb+srv://adityapatel:aditya310708@cluster0.esldbqp.mongodb.net/?retryWrites=true&w=majority"
+TEMP_MONGODB = ""
 
 
 if config.MONGO_DB_URI is None:
@@ -30,7 +30,3 @@ else:
     _mongo_sync_ = MongoClient(config.MONGO_DB_URI)
     mongodb = _mongo_async_.BrandrdXMusic
     pymongodb = _mongo_sync_.BrandrdXMusic
-
-
-
-
